@@ -86,6 +86,9 @@ $table_prefix = 'wp_';
  */
 define('WP_DEBUG', false);
 
+// Contact form
+define( 'WPCF7_AUTOP', false );
+
 /* C’est tout, ne touchez pas à ce qui suit ! Bonne publication. */
 
 /** Chemin absolu vers le dossier de WordPress. */
