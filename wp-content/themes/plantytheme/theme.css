@@ -2,19 +2,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-right: 0%;
     height: 55px;
 }
 
 .site-logo img {
     width: 200px ;
-    margin-left: 50px;
+    margin-left: 35px;
 }
 
 .menu-main-menu-container {
-    display: flex;
-    margin: 0px;
-    padding: 0px;
     height: 100%;
      }
 
@@ -22,9 +18,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-width: 600px;
+    min-width: 400px;
     list-style-type: none;
     height: 100%;
+    margin: auto;
 }
 
 nav {
@@ -168,28 +165,28 @@ nav {
 }
 
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 992px) {
         .header {
             display: flex;
-            justify-content: flex-end;
+            justify-content: space-between;
         }
-    .navmenu {
-        min-width: 400px;
-    }
 }
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 768px) {
+   
+    h1 {
+        font-size: 24px;
+    }
+    .site-logo img {
+        margin-left: 0px;
+    }
+    .menu-main-menu-container {
+        width: 100%;
+    }
     .f2a {
         border-right: 0px;
         padding-right: 0px;
     }
-}
-
-@media only screen and (max-width: 600px) {
-
-       .site-logo {
-        display: none;
-        }
         .f2 {
             display: flex;
             flex-direction: column;
@@ -211,20 +208,20 @@ nav {
         .f1a img {
             width: 150px;
         }
-}
-
-
-@media only screen and (max-width: 400px) {
 
         .navmenu {
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
+            justify-content: flex-start;
+            min-width: inherit;
         }
         .navmenu li {
             min-height: 50px;
         }
         .header {
             height: auto;
-        }
+            display: flex;
+            flex-direction: column;
+            padding-top: 10px;
+}
 }
